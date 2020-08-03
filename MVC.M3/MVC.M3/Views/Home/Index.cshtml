@@ -1,0 +1,15 @@
+﻿
+<h2>Portfolio</h2>
+<script>
+    function loadJQueryHTML() {
+        $("#targetDiv").load("/home/getHTML", function () {
+            $("#targetDiv").append(" using loadJQueryHTML()");
+        });
+    }
+</script>
+
+<input id="Button1" type="button" value="Load JQuery HTML" onClick="loadJQueryHTML()"/>
+
+<div id=" targetDiv">
+    This Text will be replaced
+</div>
