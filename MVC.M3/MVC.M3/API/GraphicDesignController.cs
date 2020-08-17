@@ -11,12 +11,45 @@ namespace MVC.M3.API
     public class GraphicDesignController : ApiController
     {
         // GET: api/GraphicDesign
-        List<GraphicDesign> design = new List<GraphicDesign>();
+        List<GraphicDesignProject> design = new List<GraphicDesignProject>();
         public GraphicDesignController()
         {
-            design.Add(new GraphicDesign { DesignType = "Web Design, Publication Design, Illustration Design", FrontEnd = "HTML5, CSS,JavaScript", Type = "Advanced Typography", AdobeCloud = "Illustrator, Indesign, Photoshop, AfterEffects" });
+            design.Add(new GraphicDesignProject
+            {
+                NameOfProject = "ABC Type",
+                Description = "Advanced Typogrpahy project: created in Swiss Style design",
+                DesignType = "Poster Design",
+                Thumbnail = "png"
+            });
+
+            design.Add(new GraphicDesignProject
+            {
+                NameOfProject = "Generation Adderall",
+                Description = "Publication on 'Generation Adderall' article.",
+                DesignType = "Publication Design",
+                Thumbnail = "png"
+            });
+
+            design.Add(new GraphicDesignProject
+            {
+                NameOfProject = "Coffee",
+                Description = "Illustrations on 'How to make coffee'",
+                DesignType = "Illustration/Information Design",
+                Thumbnail = "png"
+            });
+            design.Add(new GraphicDesignProject
+            {
+                NameOfProject = "Out Of Home Advertise",
+                Description = "Nike run app branding and advertising brand book",
+                DesignType = "Advertising Design",
+                Thumbnail = "png"
+            });
+
+
+
         }
-        public List<GraphicDesign> Get()
+
+        public List<GraphicDesignProject> Get()
         {
 
             return design;
@@ -31,6 +64,7 @@ namespace MVC.M3.API
         // POST: api/GraphicDesign
         public void Post([FromBody]string value)
         {
+            
         }
 
         // PUT: api/GraphicDesign/5

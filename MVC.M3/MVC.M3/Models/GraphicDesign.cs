@@ -6,12 +6,14 @@ using System.Web;
 namespace MVC.M3.Models
 {
     [Serializable]
-    public class GraphicDesign
+    public class GraphicDesignProject
     {
+        public string NameOfProject;
+        public string Description;
         public string DesignType;
         public string FrontEnd;
-        public string Type;
-        public string AdobeCloud;
+       
+        public string Thumbnail;
 
 
 

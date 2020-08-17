@@ -159,9 +159,13 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="EmailCreator.cs" />
+    <Compile Include="Employer.cs" />
+    <Compile Include="FacadePattern.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IEmailFluentInterface.cs" />
     <Compile Include="Models\About.cs" />
     <Compile Include="Models\GraphicDesign.cs" />
     <Compile Include="Models\SoftwareDevelopment.cs" />

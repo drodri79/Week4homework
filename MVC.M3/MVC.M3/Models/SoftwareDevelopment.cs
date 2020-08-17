@@ -9,10 +9,10 @@ namespace MVC.M3.Models
     [Serializable]
     public class SoftwareDevelopment : IEnumerable
     {
-        private GraphicDesign[] _softwaredev;
-        public SoftwareDevelopment(GraphicDesign[] pArray)
+        private GraphicDesignProject[] _softwaredev;
+        public SoftwareDevelopment(GraphicDesignProject[] pArray)
         {
-            _softwaredev = new GraphicDesign[pArray.Length];
+            _softwaredev = new GraphicDesignProject[pArray.Length];
 
             for (int i = 0; i < pArray.Length; i++)
             {
@@ -34,13 +34,13 @@ namespace MVC.M3.Models
 
     public class SoftwareEnum : IEnumerator
     {
-        public GraphicDesign[] _softwaredev;
+        public GraphicDesignProject[] _softwaredev;
 
         // Enumerators are positioned before the first element
         // until the first MoveNext() call.
         int position = -1;
 
-        public SoftwareEnum(GraphicDesign[] list)
+        public SoftwareEnum(GraphicDesignProject[] list)
         {
             _softwaredev = list;
         }
@@ -64,7 +64,7 @@ namespace MVC.M3.Models
             }
         }
 
-        public GraphicDesign Current
+        public GraphicDesignProject Current
         {
             get
             {
